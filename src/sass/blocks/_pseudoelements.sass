@@ -1,0 +1,21 @@
+.button
+    transition: 0.2s
+    &:hover
+        cursor: pointer
+        border: 1px solid $button-border
+    &:active
+        background-color: $alt-button
+
+.navbar
+    &-menu
+        &__link
+            &:after
+                content: ''
+                display: block
+                height: 1px
+                background-color: #fff
+                width: 0%
+                transition: 0.2s
+            &:hover
+                &:after
+                    width: 100%
