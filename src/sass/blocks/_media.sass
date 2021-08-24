@@ -11,7 +11,7 @@
                 object-fit: cover
 
 @media (max-width: 992px)
-    .container
+    .container, .newletter-wrapper
         max-width: 700px
     .logo
         width: 132px
@@ -99,6 +99,13 @@
         width: 100%
     .map
         width: 100%
+    .newsletter
+        &-wrapper
+            max-width: 576px
+            width: 92%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -107,3 +114,17 @@
     .hotel
         &__slider
             margin-bottom: 20px
+    .newsletter
+        padding-top: 76px
+        padding-bottom: 83px
+        &-title
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            &__strong
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
+    .subscribe
+        width: 100%
