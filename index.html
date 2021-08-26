@@ -163,17 +163,17 @@
     </div>
     <!-- /.hotel -->
     <section class="newsletter">
-        <div class="newsletter-wrapper">
-            <h2 class="newsletter-title">
-                subscribe to our
-                <span class="newsletter-title__strong">Newsletter</span>
-            </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email adress">
-                <button class="button subscribe__button">Send</button>
-            </form>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="src/img/newsletter_bg.jpg">
+            <div class="newsletter-wrapper">
+                <h2 class="newsletter-title">subscribe to our<span class="newsletter-title__strong">Newsletter</span></h2>
+                    <form action="#" class="subscribe newsletter__subscribe">
+                        <input type="text" class="subscribe__input" placeholder="Your email adress">
+                        <button class="button subscribe__button">Send</button>
+                    </form>
+                </div>
+                <!-- /.newsletter-wrapper -->
         </div>
-        <!-- /.newsletter-wrapper -->
+        <!-- parallax-window -->
     </section>
     <section class="reviews">
         <div class="container">
@@ -200,6 +200,46 @@
                         <!-- reviews-slider__item -->
                     </div>
                     <!-- swiper slide -->
+                    <div class="swiper-slide">
+                        <div class="swiper-slide reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="src/img/avatar-rev-2.jpg" alt="Photo: Paul Hill" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Paul Hill</h3>
+                                <span class="reviews-slider__date">Stayed 21 Dec, 2018</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                </div>
+                                <!-- rating -->
+                                <p class="reviews__text">I absolutely loved spending the day. Parts of hotel were under renovation and couldn't see. But then we ran into an named Josh who gave us a private tour. He is absolutely amazing. He knows so much about the history of this historical gem. And when I say I was brought to tears entering the original lobby, that's because I really did start to cry. Next visit to California we will definitely be staying there, and looking Josh up.</p>
+                            </div>
+                        </div>
+                        <!-- reviews-slider__item -->
+                    </div>
+                    <!-- swiper slide -->
+                    <div class="swiper-slide">
+                        <div class="swiper-slide reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img src="src/img/avatar-rev-3.jpg" alt="Photo: Anthony Munhoz" class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Anthony Munhoz</h3>
+                                <span class="reviews-slider__date">Stayed 07 July, 2021</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                    <img src="src/img/ico/Star.svg" alt="star">
+                                </div>
+                                <!-- rating -->
+                                <p class="reviews__text">The charm of the hotel is mesmerizing. Every night we had a live band outside our balcony which was energetic and lively and the music was fantastic. On the boardwalk, everyone is happy. It is a joy to hear children laughing and playing, enjoying fresh air, swimming in the ocean, being kids. I am nostalgic for the Hotel Del Coronado. I would love to come back. The haunted tour in particular was the highlight of my experience. The only drawback, and the hotel has no control over this, are the two military bases sandwiching in the hotel. To the north is an obnoxious runway with bright flashing lights and noisy jets landing periodically in what can only be described as a show of force. To the south, heaven help you if you step onto the Navy's beach. (I thought beaches couldn't be private in California?) If you do, you will hear whistles, see bright lights shone on you  (if it is nighttime), and you will be gestured at rudely to leave the private beach. Aside of from that buzzkill, the hotel was spectacular, the staff were friendly, warm, professional and efficient, and it was a wonderful vacation.</p>
+                            </div>
+                        </div>
+                        <!-- reviews-slider__item -->
+                    </div>
+                    <!-- swiper slide -->
                 </div>
                 <!-- swiper wrapper -->
 
@@ -213,5 +253,8 @@
     </section>
     <script src="src/js/swiper-bundle.min.js"></script>
     <script src="src/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="src/js/parallax.js"></script>
+    <script src="src/js/parallax.min.js"></script>
 </body>
 </html>

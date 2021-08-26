@@ -1,20 +1,4 @@
 .newsletter
-    position: relative
-    padding: 98px 0 87px 0
-    background-image: url(/src/img/newsletter_bg.jpg)
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center
-    &::before
-        content: ''
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        width: 100%
-        height: 100%
-        background-color: rgba($dark-theme, 0.8)
     &-wrapper
         display: flex
         align-items: center
@@ -60,3 +44,19 @@
         border: none
         background-color: $primary
         color: $light-theme
+.parallax-window
+    position: relative
+    padding: 98px 0 87px 0
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($dark-theme, 0.8)
