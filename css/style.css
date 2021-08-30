@@ -213,7 +213,6 @@ img {
 .hotel-slider {
   max-width: 728px;
   max-height: 450px;
-  margin-left: 0px;
 }
 
 .hotel-slider__item {
@@ -222,6 +221,13 @@ img {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.hotel-slider__image {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hotel-slider__button {
@@ -413,7 +419,7 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  padding: 13px 79px;
+  padding: 13px;
   background-color: #EC1F46;
   color: #fff;
   border-radius: 4px;
@@ -422,7 +428,7 @@ img {
 
 .map {
   width: 347px;
-  height: 213px;
+  max-height: 213px;
   background-color: #000;
   border-radius: 10px;
 }
@@ -547,8 +553,8 @@ img {
 }
 
 .reviews {
-  margin-top: 40px;
-  margin-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 .reviews__title {
@@ -699,7 +705,7 @@ img {
 }
 
 .activities {
-  padding-top: 65px;
+  padding-top: 60px;
   padding-bottom: 98px;
 }
 
@@ -712,6 +718,7 @@ img {
 }
 
 .activities-cards {
+  margin-top: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,7 +728,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 57px;
 }
 
 .activities-cards__item {
@@ -736,6 +742,8 @@ img {
   background-repeat: no-repeat;
   width: 255px;
   height: 255px;
+  padding-top: 143px;
+  padding-bottom: 24px;
   padding-left: 26px;
   z-index: 9;
   border-radius: 6px;
@@ -766,32 +774,25 @@ img {
 
 .activities-cards__item--1 {
   background-image: url(/src/img/activities-img-1.jpg);
-  width: 255px;
-  height: 255px;
 }
 
 .activities-cards__item--2 {
   background-image: url(/src/img/activities-img-2.jpg);
-  width: 255px;
-  height: 255px;
+  background-position: center;
 }
 
 .activities-cards__item--3 {
   background-image: url(/src/img/activities-img-3.jpg);
-  width: 255px;
-  height: 255px;
+  background-position: right;
 }
 
 .activities-cards__item--4 {
   background-image: url(/src/img/activities-img-4.jpg);
-  width: 255px;
-  height: 255px;
 }
 
 .activities-cards__title {
   z-index: 12;
   width: 180px;
-  margin-top: 143px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1196,6 +1197,19 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .activities-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .activities-cards__item {
+    max-width: 225px;
+    max-height: 225px;
+    padding-top: 113px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1253,6 +1267,38 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities-cards__item {
+    max-width: 339px;
+    max-height: 255px;
+    margin-bottom: 20px;
+    padding-top: 143px;
+  }
+  .activities-cards__item--1 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .activities-cards__item--2 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .activities-cards__item--3 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .activities-cards__item--4 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1298,6 +1344,9 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1329,17 +1378,22 @@ template {
   }
   .hotel-right {
     margin: auto;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    min-height: 470px;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .booking {
     width: 100%;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    max-height: 470px;
   }
   .map {
+    max-height: 470px;
     width: 100%;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .newsletter-wrapper {
     max-width: 576px;
@@ -1376,24 +1430,72 @@ template {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities-cards__item {
+    margin-bottom: 20px;
+  }
+  .activities-cards__item--1 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .activities-cards__item--2 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .activities-cards__item--3 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .activities-cards__item--4 {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel__slider {
     max-width: 350px;
-    min-height: auto;
+    max-height: 100%;
     margin: auto;
     margin-bottom: 20px;
   }
-  .map {
-    margin-top: 20px;
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: columns;
+            flex-direction: columns;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .newsletter {
-    padding-top: 76px;
-    padding-bottom: 83px;
+  .booking {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .map {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .newsletter-title {
     font-weight: 300;
@@ -1409,4 +1511,25 @@ template {
   .subscribe {
     width: 100%;
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .activities-cards {
+    margin-top: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activities-cards__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 143px;
+  }
 }
+/*# sourceMappingURL=style.css.map */
