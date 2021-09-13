@@ -1086,6 +1086,195 @@ img {
   height: 16px;
 }
 
+.other-packages {
+  padding: 40px 0 70px 0;
+}
+
+.other-packages__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+
+.hotel-card__right {
+  background-color: #0A223D;
+  padding: 40px 21px 30px 44px;
+  color: #fff;
+  width: 365px;
+  height: 500px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.hotel-card__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.hotel-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.hotel-card__info-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13px;
+}
+
+.hotel-card__info-text {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.hotel-card__price-old {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: line-through;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.hotel-card__price-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-card__price-new {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hotel-card__button {
+  width: 120px;
+  height: 40px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.hotel-card__icon {
+  width: 12px;
+  height: 14px;
+}
+
+.card-wrapper__img {
+  height: 500px;
+  width: 365px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.card-wrapper__main-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  position: relative;
+}
+
+.alternative-card {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.alternative-card__img {
+  height: 250px;
+  width: 350px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.alternative-card__down {
+  background-color: #0A223D;
+  padding: 30px 21px 25px 32px;
+  color: #fff;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.name-card {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 23px;
+}
+
+.flash-offer {
+  position: absolute;
+  width: 95px;
+  height: 30px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #EC1F46;
+  padding: 7px 11px;
+  z-index: 99;
+  top: 26px;
+  left: 0;
+}
+
+.flash-offer__text {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1940,12 +2129,16 @@ template {
   .footer__message {
     height: 90px;
     max-width: 400px;
+    margin-bottom: 30px;
   }
   .footer__button {
     height: 25px;
   }
+  .footer__info {
+    margin-top: 20px;
+  }
   .disclaimer {
-    margin-top: 51px;
+    margin-top: 45px;
   }
   .disclaimer-empty {
     width: 0;
