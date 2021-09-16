@@ -20,6 +20,18 @@
     .footer
         &__input
             flex-basis: 100%
+    .other-packages
+        margin-top: 20px
+        margin-bottom: 35px
+        &__text
+            font-size: 36px
+            line-height: 45px
+            margin-bottom: 35px
+    .card-wrapper
+        display: flex
+        justify-content: center
+    .alternative-card
+        display: none
 @media (max-width: 992px)
     .container, .newletter-wrapper
         max-width: 700px
@@ -175,6 +187,10 @@
             flex-direction: column
             align-items: flex-start
     .reviews
+        &__title
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 32px
         &-slider
             &__item
                 padding: 0 30px 30px
@@ -208,6 +224,28 @@
     .footer
         &__input
             flex-basis: 100%
+    .other-packages
+        margin-top: 20px
+        margin-bottom: 35px
+        &__text
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 27px
+    .hotel-card
+        &__right
+            padding: 30px 20px 20px 20px
+        &__description
+            font-size: 12px
+        &__button
+            width: 90px
+            height: 30px
+            font-size: 12px
+            line-height: 16px
+    .name-card
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 14px
+
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -305,3 +343,36 @@
         margin-top: 45px
         &-empty
             width: 0
+    .card-wrapper
+        &__img
+            height: 400px
+            width: 240px
+    .hotel-card
+        &__right
+            padding: 10px 10px 10px 10px
+            height: 400px
+            width: 320px
+        &__description
+            margin-bottom: 14px
+            font-size: 12px
+            line-height: 140%
+        &__info
+            margin-bottom: 8px
+            &-text
+                margin-left: 6px
+                font-size: 10px
+                line-height: 12px
+            &-div
+                margin-bottom: 8px
+
+        &__price-old
+            font-size: 12px
+            line-height: 14px
+        &__price-new
+            font-size: 18px
+            line-height: 18px
+        &__button
+            width: 70px
+            height: 20px
+            font-size: 12px
+            line-height: 14px
