@@ -10,19 +10,19 @@
     <title>Best Tour Plan - Hotel Booking</title>
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-top">
                 <a href="https://www.figma.com/file/TcpEmgcgph1gAyHCP5k8xo/Hotel-Booking-%E2%80%94-Web-Start?node-id=0%3A1" target="_blank" class="logo">
                     <img src="src/img/ico/logo-horizontal.svg" alt="site logo: horizontal" class="logo__horizontal">
                 </a>
-                <form action="#" class="search navbar__search">
+                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
                     <input type="text" class="search__input" placeholder="Search Location">
                     <button class="button search__button">
                         <img src="src/img/ico/search.svg" alt="icon search">
                     </button>
                 </form>
-                <a href="" class="user navbar__user">
+                <a href="" class="user navbar__user navbar__user--mobile--hidden">
                     <img src="src/img/avatar-nathan.jpg" alt="avatar: user" class="user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
@@ -40,6 +40,20 @@
             <div class="container">
                 <div class="navbar-nav">
                     <ul class="navbar-menu">
+                        <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+                            <a href="" class="user navbar__user navbar__user--mobile--visible">
+                                <img src="src/img/avatar-nathan.jpg" alt="avatar: user" class="user__avatar">
+                                <span class="user__name user__name--light">Nathan</span>
+                            </a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+                            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+                                <input type="text" class="search__input" placeholder="Search Location">
+                                <button class="button search__button">
+                                <img src="src/img/ico/search.svg" alt="icon search">
+                                 </button>
+                            </form>
+                        </li>
                         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All deals</a></li>
                         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
                         <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
