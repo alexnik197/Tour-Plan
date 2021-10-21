@@ -13,7 +13,7 @@
     <header class="navbar navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="https://www.figma.com/file/TcpEmgcgph1gAyHCP5k8xo/Hotel-Booking-%E2%80%94-Web-Start?node-id=0%3A1" target="_blank" class="logo">
+                <a href="#" target="_blank" class="logo">
                     <img src="src/img/ico/logo-horizontal.svg" alt="site logo: horizontal" class="logo__horizontal">
                 </a>
                 <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -161,7 +161,7 @@
                             </a>
                         </div>
                         <!-- /.booking__call-center -->
-                        <button class="button booking__button">View Other Options</button>
+                        <button data-toggle="modal" class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
                     <div class="map">
@@ -515,6 +515,29 @@
         </div>
         <!-- container -->
     </footer>
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close"><img src="src/img/ico/close.svg" alt="ico: close"></a>
+            <h3 class="modal__title">Booking</h3>
+            <form action="" class="modal__form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*">
+                <input type="text" class="input modal__input" placeholder="Email*">
+                <textarea name="" id="" cols="30" rows="10" class="modal__message" placeholder="Message"></textarea>
+                <div class="modal__footer">
+                    <button class="button modal__button">Send</button>
+                    <span class="modal__info">* Required Fields</span>
+                </div>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="src/js/jquery-3.6.0.min.js"></script>
     <script src="src/js/swiper-bundle.min.js"></script>
     <script src="src/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
