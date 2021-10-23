@@ -193,6 +193,7 @@ img {
 }
 
 .hotel-grid {
+  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +216,8 @@ img {
 }
 
 .hotel-slider {
-  max-width: 728px;
+  margin-left: 0;
+  max-width: 724px;
   max-height: 450px;
 }
 
@@ -433,7 +435,6 @@ img {
 .map {
   width: 347px;
   height: 213px;
-  background-color: #000;
   border-radius: 10px;
 }
 
