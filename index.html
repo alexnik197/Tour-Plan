@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Best Tour Plan - Hotel Booking</title>
 </head>
@@ -13,11 +14,11 @@
     <header class="navbar navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" target="_blank" class="logo">
+                <a href="index.html"class="logo" data-aos="zoom-in" data-aos-delay="100">
                     <img src="src/img/ico/logo-horizontal.svg" alt="site logo: horizontal" class="logo__horizontal">
                 </a>
                 <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-                    <input type="text" class="search__input" placeholder="Search Location">
+                    <input type="search" class="search__input" placeholder="Search Location">
                     <button class="button search__button">
                         <img src="src/img/ico/search.svg" alt="icon search">
                     </button>
@@ -48,7 +49,7 @@
                         </li>
                         <li class="navbar-menu__item navbar-menu__item--mobile--visible">
                             <form action="#" class="search navbar__search navbar__search--mobile--visible">
-                                <input type="text" class="search__input" placeholder="Search Location">
+                                <input type="search" class="search__input" placeholder="Search Location">
                                 <button class="button search__button">
                                 <img src="src/img/ico/search.svg" alt="icon search">
                                  </button>
@@ -307,8 +308,8 @@
         <div class="parallax-window" data-parallax="scroll" data-image-src="src/img/newsletter_bg.jpg">
             <div class="newsletter-wrapper">
                 <h2 class="newsletter-title">subscribe to our<span class="newsletter-title__strong">Newsletter</span></h2>
-                    <form action="send.php" method="post" class="subscribe newsletter__subscribe">
-                        <input type="text" class="subscribe__input" placeholder="Your email adress" name="elmail">
+                    <form action="send.php" method="post" class="subscribe newsletter__subscribe" data-aos="zoom-in-left" data-aos-delay="100">
+                        <input type="email" class="subscribe__input" placeholder="Your email adress*" name="elmail" required minlength="5">
                         <button class="button subscribe__button">Send</button>
                     </form>
                 </div>
@@ -396,22 +397,22 @@
         <div class="container">
             <span class="activities__text">Other activities</span>
             <div class="activities-cards">
-                <div class="activities-cards__item activities-cards__item--1">
+                <div class="activities-cards__item activities-cards__item--1" data-aos="fade-right" data-aos-delay="200">
                     <span class="activities-cards__title">The curious corner of chamarel</span>
                     <button class="button activities-cards__button">Book Now</button>
                 </div>
                 <!-- activities item -->
-                <div class="activities-cards__item activities-cards__item--2">
+                <div class="activities-cards__item activities-cards__item--2" data-aos="fade-right" data-aos-delay="400">
                     <span class="activities-cards__title">Gymkhana club golf course</span>
                     <button class="button activities-cards__button">Book Now</button>
                 </div>
                 <!-- activities item -->
-                <div class="activities-cards__item activities-cards__item--3">
+                <div class="activities-cards__item activities-cards__item--3"  data-aos="fade-right" data-aos-delay="600">
                     <span class="activities-cards__title">Tamarind falls hiking trip - full day</span>
                     <button class="button activities-cards__button">Book Now</button>
                 </div>
                 <!-- activities item -->
-                <div class="activities-cards__item activities-cards__item--4">
+                <div class="activities-cards__item activities-cards__item--4"  data-aos="fade-right" data-aos-delay="800">
                     <span class="activities-cards__title">The blue marine discovery quest</span>
                     <button class="button activities-cards__button">Book Now</button>
                 </div>
@@ -488,9 +489,9 @@
                     <div class="footer__contact-form">
                         <h3 class="footer__title footer__title--mb3">Send us a message</h3>
                         <form action="send.php" method="post" class="footer__form">
-                            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-                            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone"> 
-                            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+                            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
+                            <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required minlength="9"> 
+                            <textarea class="footer__message" placeholder="Message" name="message" minlength="10"></textarea>
                             <button class="button footer__button">Send</button>
                             <span class="footer__info">* Required Fields</span>
                         </form>
@@ -525,10 +526,10 @@
             <a href="#" class="modal__close"><img src="src/img/ico/close.svg" alt="ico: close"></a>
             <h3 class="modal__title">Booking</h3>
             <form action="send.php" method="post" class="modal__form">
-                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-                <input type="text" class="input modal__input" placeholder="Phone number*" name="phone">
-                <input type="text" class="input modal__input" placeholder="Email*" name="elmail">
-                <textarea class="modal__message" placeholder="Message" name="message"></textarea>
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+                <input type="tel" class="input modal__input" placeholder="Phone number*" name="phone" required minlength="9">
+                <input type="email" class="input modal__input" placeholder="Email*" name="elmail" required>
+                <textarea class="modal__message" placeholder="Message" name="message" minlength="10"></textarea>
                 <div class="modal__footer">
                     <button class="button modal__button">Send</button>
                     <span class="modal__info">* Required Fields</span>
@@ -540,9 +541,10 @@
     <!-- /.modal -->
     <script src="src/js/jquery-3.6.0.min.js"></script>
     <script src="src/js/swiper-bundle.min.js"></script>
-    <script src="src/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="src/js/parallax.js"></script>
     <script src="src/js/parallax.min.js"></script>
+    <script src="src/js/aos.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
