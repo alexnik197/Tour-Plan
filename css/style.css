@@ -777,21 +777,21 @@ img {
 }
 
 .activities-cards__item--1 {
-  background-image: url(/src/img/activities-img-1.jpg);
+  background-image: url(../src/img/activities-img-1.jpg);
 }
 
 .activities-cards__item--2 {
-  background-image: url(/src/img/activities-img-2.jpg);
+  background-image: url(../src/img/activities-img-2.jpg);
   background-position: center;
 }
 
 .activities-cards__item--3 {
-  background-image: url(/src/img/activities-img-3.jpg);
+  background-image: url(../src/img/activities-img-3.jpg);
   background-position: right;
 }
 
 .activities-cards__item--4 {
-  background-image: url(/src/img/activities-img-4.jpg);
+  background-image: url(../src/img/activities-img-4.jpg);
 }
 
 .activities-cards__title {
